@@ -3,6 +3,7 @@ name: Run Code Checks
 on:
   pull_request:
   push:
+  workflow_dispatch:
 
 # When a PR is updated, cancel the jobs from the previous version. Merges
 # do not define head_ref, so use run_id to never cancel those jobs.
