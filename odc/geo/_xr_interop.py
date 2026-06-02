@@ -927,10 +927,7 @@ def _xr_reproject_ds(
             **kw,
         )
 
-    data_vars = {
-        name: _maybe_reproject(da)
-        for name, da in src.data_vars.items()
-    }
+    data_vars = {name: _maybe_reproject(da) for name, da in src.data_vars.items()}
     attrs = {name: value for name, value in src.attrs if name not in SPATIAL_ATTRIBUTES}
     dst = xarray.Dataset(data_vars, attrs=attrs)
     for src_coord_name, src_coord in src.coords.items():
