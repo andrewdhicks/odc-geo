@@ -107,6 +107,7 @@ dev = [
     "ipyleaflet>=0.19.2",
     "matplotlib>=3.9.4",
     "mypy",
+    "pre-commit>=4.0.1",
     "pytest>=8.3.5",
     "pytest-cov>=6.0.0",
     "pytest-timeout>=2.3.1",
